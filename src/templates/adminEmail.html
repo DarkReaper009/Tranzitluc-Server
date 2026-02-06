@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Contact Form Submission</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      /* Reset styles */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* Responsive Media Queries */
+      @media only screen and (max-width: 600px) {
+        .mobile-stack {
+          display: block !important;
+          width: 100% !important;
+          margin-bottom: 5px !important;
+          box-sizing: border-box;
+        }
+        .mobile-stack-value {
+          display: block !important;
+          width: 100% !important;
+          top: 0 !important;
+          margin-top: 0 !important;
+          margin-bottom: 15px !important;
+        }
+        .header-stack {
+          display: block !important;
+          width: 100% !important;
+          text-align: center !important;
+          padding-bottom: 10px !important;
+          padding-left: 0 !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .mobile-padding {
+          padding: 10px !important;
+        }
+        .field-row {
+          padding-bottom: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333333;
+    "
+  >
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="background-color: #f9f9f9"
+    >
+      <tr>
+        <td align="center" style="padding: 20px">
+          <!-- Main Container -->
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="
+              max-width: 600px;
+              background-color: #ffffff;
+              border: 1px solid #dddddd;
+              border-radius: 5px;
+              border-collapse: separate;
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  background-color: #121d50;
+                  padding: 20px;
+                  border-radius: 5px 5px 0 0;
+                  color: #ffffff;
+                "
+              >
+                <!-- Nested Table for Header Content to avoid Flexbox -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td
+                      align="center"
+                      valign="middle"
+                      class="header-stack"
+                      width="20%"
+                    >
+                      <img
+                        src="{{logo}}"
+                        alt="Tranzitluc Logo"
+                        width="auto"
+                        height="80"
+                        style="
+                          height: 5rem;
+                          width: auto;
+                          display: inline-block;
+                          border: 0;
+                        "
+                      />
+                    </td>
+                    <td
+                      align="center"
+                      valign="middle"
+                      class="header-stack"
+                      width="80%"
+                      style="padding-left: 80px"
+                    >
+                      <h2
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          margin: 10px 0 0 0;
+                          letter-spacing: 1px;
+                          color: #ffffff;
+                        "
+                      >
+                        New Contact Form Submission
+                      </h2>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Content -->
+            <tr>
+              <td style="padding: 20px; background-color: #ffffff">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <!-- Field: Oras de plecare -->
+                  <tr>
+                    <td class="field-row" style="padding-bottom: 15px">
+                      <span
+                        class="mobile-stack"
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          color: #090e23;
+                          margin-right: 10px;
+                        "
+                        >Oras de plecare:</span
+                      >
+                      <span
+                        class="mobile-stack-value"
+                        style="
+                          font-family: &quot;Roboto&quot;, sans-serif;
+                          font-weight: 400;
+                          font-size: 1.125rem;
+                          color: #5c6c7b;
+                          position: relative;
+                          top: -1px;
+                        "
+                      >
+                        {{departure_city}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Field: Oras de sosire -->
+                  <tr>
+                    <td class="field-row" style="padding-bottom: 15px">
+                      <span
+                        class="mobile-stack"
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          color: #090e23;
+                          margin-right: 10px;
+                        "
+                        >Oras de sosire:</span
+                      >
+                      <span
+                        class="mobile-stack-value"
+                        style="
+                          font-family: &quot;Roboto&quot;, sans-serif;
+                          font-weight: 400;
+                          font-size: 1.125rem;
+                          color: #5c6c7b;
+                          position: relative;
+                          top: -1px;
+                        "
+                      >
+                        {{destination_city}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Field: Greutate totala -->
+                  <tr>
+                    <td class="field-row" style="padding-bottom: 15px">
+                      <span
+                        class="mobile-stack"
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          color: #090e23;
+                          margin-right: 10px;
+                        "
+                        >Greutate totala:</span
+                      >
+                      <span
+                        class="mobile-stack-value"
+                        style="
+                          font-family: &quot;Roboto&quot;, sans-serif;
+                          font-weight: 400;
+                          font-size: 1.125rem;
+                          color: #5c6c7b;
+                          position: relative;
+                          top: -1px;
+                        "
+                      >
+                        {{total_weight}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Field: Numar de telefon -->
+                  <tr>
+                    <td class="field-row" style="padding-bottom: 15px">
+                      <span
+                        class="mobile-stack"
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          color: #090e23;
+                          margin-right: 10px;
+                        "
+                        >Numar de telefon:</span
+                      >
+                      <span
+                        class="mobile-stack-value"
+                        style="
+                          font-family: &quot;Roboto&quot;, sans-serif;
+                          font-weight: 400;
+                          font-size: 1.125rem;
+                          color: #5c6c7b;
+                          position: relative;
+                          top: -1px;
+                        "
+                      >
+                        {{phone}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Field: Email -->
+                  <tr>
+                    <td class="field-row" style="padding-bottom: 15px">
+                      <span
+                        class="mobile-stack"
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          color: #090e23;
+                          margin-right: 10px;
+                        "
+                        >Email:</span
+                      >
+                      <span
+                        class="mobile-stack-value"
+                        style="
+                          font-family: &quot;Roboto&quot;, sans-serif;
+                          font-weight: 400;
+                          font-size: 1.125rem;
+                          color: #5c6c7b;
+                          position: relative;
+                          top: -1px;
+                        "
+                      >
+                        {{email}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Message Section -->
+                  <tr>
+                    <td style="padding-bottom: 5px">
+                      <span
+                        class="mobile-stack"
+                        style="
+                          font-family: &quot;Space Grotesk&quot;, sans-serif;
+                          font-weight: 700;
+                          font-size: 1.3rem;
+                          color: #090e23;
+                          display: block;
+                        "
+                        >Mesaj:</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 15px">
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="
+                          background-color: #f4f4f4;
+                          border-left: 4px solid #007bff;
+                          border-radius: 4px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            style="
+                              padding: 15px;
+                              font-family: &quot;Roboto&quot;, sans-serif;
+                              font-weight: 400;
+                              font-size: 1.125rem;
+                              color: #5c6c7b;
+                            "
+                          >
+                            {{message}}
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  padding: 10px 20px;
+                  font-size: 12px;
+                  color: #777777;
+                  background-color: #f9f9f9;
+                  border-radius: 0 0 5px 5px;
+                "
+              >
+                <p style="margin: 0">
+                  This email was sent from Tranzitluc Website.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
