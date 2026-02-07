@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://tranzitluc.com", // Replace with your actual frontend URL
+    origin: "https://www.tranzitluc.com", // Replace with your actual frontend URL
   }),
 );
 
